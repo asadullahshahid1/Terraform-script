@@ -7,7 +7,7 @@ variable "aws_region" {
 }
 
 variable "environment" {
-  description = "Environment name (dev, staging, prod)"
+  description = "Environment name"
   type        = string
   default     = "prod"
 }
@@ -67,5 +67,5 @@ variable "malicious_ips" {
 variable "codestar_connection_arn" {
   description = "ARN of the existing CodeStar connection for GitHub integration"
   type        = string
-  default     = "arn:aws:codestar-connections:us-east-1:123456789012:connection/dummy-connection-id"
+  default     = "arn:aws:codestar-connections:us-east-1:123456789012:connection/connection-id"
 }
