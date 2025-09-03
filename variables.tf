@@ -19,9 +19,9 @@ variable "domain_name" {
 }
 
 variable "github_repository" {
-  description = "GitHub repository ID for CodeStar connection (format: owner/repository-name)"
+  description = "GitHub repository ID for CodeStar connection"
   type        = string
-  default     = "paynest/document-verifier"
+  default     = "Terraform-Script"
 }
 
 variable "github_branch" {
@@ -67,5 +67,12 @@ variable "malicious_ips" {
 variable "codestar_connection_arn" {
   description = "ARN of the existing CodeStar connection for GitHub integration"
   type        = string
-  default     = "arn:aws:codestar-connections:us-east-1:123456789012:connection/connection-id"
+  default     = "arn:aws:codeconnections:us-east-1:790101844276:connection/e0a9af96-8cd8-4544-b12b-ff4c3c02d1dc"
+}
+
+variable "profile_name" {
+  description = "Profile Name"
+  type        = string
+  default     = "terraform-user"
+
 }
