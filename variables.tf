@@ -67,7 +67,7 @@ variable "malicious_ips" {
 variable "codestar_connection_arn" {
   description = "ARN of the existing CodeStar connection for GitHub integration"
   type        = string
-  default     = "arn:aws:codeconnections:us-east-1:790101844276:connection/e0a9af96-8cd8-4544-b12b-ff4c3c02d1dc"
+  default     = "arn:aws:codeconnections:region:account-ID:connection-ID"
 }
 
 variable "profile_name" {
